@@ -13,6 +13,16 @@ class DogDAL{
     private static $sire = "litter.sire";
     private static $dam = "litter.dam";
     private static $dateOfBirth ="litter.born";
+
+    private static $headShot = "images.headShot";
+    private static $standLeft= "images.standLeft";
+    private static $standRight = "images.standRight";
+    private static $eventDate = "event.date";
+    private static $eventPlace ="event.place";
+    private static $eventDescr ="event.event";
+    private static $photographer = "photographer.name";
+    private static $isPuppy ="images.isPuppy";
+
     public function __construct(\mysqli $db){
         $this->db = $db;
 }
@@ -89,22 +99,26 @@ class DogDAL{
     }
     public function addNewPhotos(Dog $dog){
         $dogID = $dog->getID();
-        $stmt = $this->db->prepare("select images.headShot from dog
+        $stmt = $this->db->prepare("select ".self::$headShot.",
+                                           ".self::$standLeft.",
+                                           ".self::$standRight.",
+                                           ".self::$eventPlace.",
+                                           ".self::$eventDate.",
+                                           ".self::$eventDescr.",
+                                           ".self::$photographer.",
+                                           ".self::$isPuppy."
+                                                            from dog
                                                             INNER JOIN images ON dog.dogID = images.dogID
-                                                            INNER JOIN color ON dog.colorID = color.colorID
                                                             INNER JOIN event ON images.eventID = event.eventID
-                                                            INNER JOIN litter ON dog.litterID = litter.litterID
-                                                            INNER JOIN origin ON dog.originID = origin.originID
                                                             INNER JOIN photographer ON images.photographerID = photographer.photographerID
-                                                            INNER JOIN tail ON dog.tailID = tail.tailID
                                                             where dog.dogID ='$dogID'");
         if ($stmt === FALSE) {
             throw new \Exception($this->db->error);
         }
         $stmt->execute();
-        $stmt->bind_result($headshot);
+        $stmt->bind_result($headshot, $standLeft, $standRight, $eventPlace, $eventDate, $eventDescr, $photographer, $isPuppy);
         while($stmt->fetch()){
-            $photo = new Photo($headshot,2,2,2,2,2,2,2);
+            $photo = new Photo($headshot,$standLeft,$standRight, $eventDate, $eventPlace,$eventDescr,$photographer,$isPuppy);
             $dog->addPhoto($photo);
         }
     }

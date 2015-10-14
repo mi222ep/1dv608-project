@@ -2,7 +2,6 @@
 namespace model;
 class Photo
 {
-    //headshot, standleft, standright, eventdate, eventplace, eventdescr, photographer, ispuppy (behövs kanske inte?)
     private $headShot;
     private $leftImg;
     private $rightImg;
@@ -24,6 +23,6 @@ class Photo
         $this->isPuppy = $isPuppy;
     }
     public function _test(){
-        echo $this->headShot;
+        echo $this->headShot, $this->leftImg, $this->rightImg, $this->eventDate, $this->eventPlace, $this->eventDescr, $this->photographer, $this->isPuppy;
     }
 }
