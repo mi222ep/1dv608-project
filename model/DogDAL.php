@@ -51,14 +51,7 @@ class DogDAL{
     }
     public function getAllDogs(){
         $listOfDogs = array();
-        $stmt = $this->db->prepare("select dog.dogID from dog
-                                                            INNER JOIN images ON dog.dogID = images.dogID
-                                                            INNER JOIN color ON dog.colorID = color.colorID
-                                                            INNER JOIN event ON images.eventID = event.eventID
-                                                            INNER JOIN litter ON dog.litterID = litter.litterID
-                                                            INNER JOIN origin ON dog.originID = origin.originID
-                                                            INNER JOIN photographer ON images.photographerID = photographer.photographerID
-                                                            INNER JOIN tail ON dog.tailID = tail.tailID");
+        $stmt = $this->db->prepare("select dog.dogID from dog");
         if ($stmt === FALSE) {
             throw new \Exception($this->db->error);
         }
@@ -78,12 +71,9 @@ class DogDAL{
                                            ".self::$dam.",
                                            ".self::$dateOfBirth."
                                                             from dog
-                                                            INNER JOIN images ON dog.dogID = images.dogID
                                                             INNER JOIN color ON dog.colorID = color.colorID
-                                                            INNER JOIN event ON images.eventID = event.eventID
                                                             INNER JOIN litter ON dog.litterID = litter.litterID
                                                             INNER JOIN origin ON dog.originID = origin.originID
-                                                            INNER JOIN photographer ON images.photographerID = photographer.photographerID
                                                             INNER JOIN tail ON dog.tailID = tail.tailID
                                                             where dog.dogID ='$dogID'");
         if ($stmt === FALSE) {
