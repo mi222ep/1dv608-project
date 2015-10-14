@@ -23,10 +23,9 @@ class Dog{
     }
     public function _test(){
         echo "<br>" . $this->dogID, $this->name, $this->regnr, $this->sex, $this->color, $this->sire, $this->dam, $this->dayOfBirth;
-        echo"<br>". $this->getAge("2015-10-14");
         echo "<br>PHOTOS";
         foreach($this->photos as $photo){
-            echo"<br>";
+            echo"<br>". $this->getAge($photo->getPhotoDate());
             $photo->_test();
         }
         echo "<br>";

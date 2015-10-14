@@ -25,4 +25,7 @@ class Photo
     public function _test(){
         echo $this->headShot, $this->leftImg, $this->rightImg, $this->eventDate, $this->eventPlace, $this->eventDescr, $this->photographer, $this->isPuppy;
     }
+    public function getPhotoDate(){
+        return $this->eventDate;
+    }
 }
