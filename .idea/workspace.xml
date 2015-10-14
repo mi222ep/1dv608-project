@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7447bd51-9f93-4dc3-a7a5-335abea75a28" name="Default" comment="Get dogs page wise">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dogs.php" afterPath="$PROJECT_DIR$/model/Dogs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/GalleryView.php" afterPath="$PROJECT_DIR$/view/GalleryView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/NavigationView.php" afterPath="$PROJECT_DIR$/view/NavigationView.php" />
+    <list default="true" id="7447bd51-9f93-4dc3-a7a5-335abea75a28" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/LayoutView.php" afterPath="$PROJECT_DIR$/view/LayoutView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/MenuView.php" afterPath="$PROJECT_DIR$/view/MenuView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aussiegalleri.iws" />
@@ -32,22 +31,47 @@
       <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/LayoutView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.387097">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state vertical-scroll-proportion="-13.4838705">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
-                <marker date="1444839577699" expanded="true" signature="337:558" placeholder="..." />
-                <marker date="1444839577699" expanded="true" signature="344:524" placeholder="..." />
-                <marker date="1444839577699" expanded="true" signature="426:483" placeholder="..." />
-                <marker date="1444839577699" expanded="true" signature="531:558" placeholder="..." />
+                <marker date="1444849699765" expanded="true" signature="337:557" placeholder="..." />
+                <marker date="1444849699765" expanded="true" signature="344:523" placeholder="..." />
+                <marker date="1444849699765" expanded="true" signature="426:482" placeholder="..." />
+                <marker date="1444849699765" expanded="true" signature="530:557" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryView.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MenuView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/MenuView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.096774">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+              <folding>
+                <marker date="1444849725979" expanded="true" signature="148:479" placeholder="..." />
+                <marker date="1444849725979" expanded="true" signature="176:464" placeholder="..." />
+                <marker date="1444849725979" expanded="true" signature="230:454" placeholder="..." />
+                <marker date="1444849725979" expanded="true" signature="238:445" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.10220674">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalleryView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/GalleryView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43437862">
+            <state vertical-scroll-proportion="-12.064516">
               <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
@@ -104,17 +128,17 @@
         <option value="$PROJECT_DIR$/Model/DogDAL.php" />
         <option value="$PROJECT_DIR$/Controller/MasterController.php" />
         <option value="$PROJECT_DIR$/Model/Dog.php" />
-        <option value="$PROJECT_DIR$/view/MenuView.php" />
         <option value="$PROJECT_DIR$/model/DogDAL.php" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/model/Photo.php" />
         <option value="$PROJECT_DIR$/model/Dog.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/view/LayoutView.php" />
         <option value="$PROJECT_DIR$/controller/MasterController.php" />
         <option value="$PROJECT_DIR$/view/NavigationView.php" />
         <option value="$PROJECT_DIR$/model/Dogs.php" />
         <option value="$PROJECT_DIR$/view/GalleryView.php" />
+        <option value="$PROJECT_DIR$/view/LayoutView.php" />
+        <option value="$PROJECT_DIR$/view/MenuView.php" />
       </list>
     </option>
   </component>
@@ -427,7 +451,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444839706938</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Getting dogs page wise now works">
+      <created>1444849366884</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1444849366884</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +519,8 @@
     <MESSAGE value="Started working on galleryview" />
     <MESSAGE value="Images now shows in gallery" />
     <MESSAGE value="Get dogs page wise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get dogs page wise" />
+    <MESSAGE value="Getting dogs page wise now works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting dogs page wise now works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -720,33 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/MenuView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6369119">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1444821682838" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34529147">
@@ -783,32 +787,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05110337">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../1DV608_createUser/view/NavigationView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.096774">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/LayoutView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.387097">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <marker date="1444839577699" expanded="true" signature="337:558" placeholder="..." />
-            <marker date="1444839577699" expanded="true" signature="344:524" placeholder="..." />
-            <marker date="1444839577699" expanded="true" signature="426:483" placeholder="..." />
-            <marker date="1444839577699" expanded="true" signature="531:558" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,8 +823,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view/GalleryView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43437862">
+        <state vertical-scroll-proportion="-12.064516">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/LayoutView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.4838705">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <marker date="1444849699765" expanded="true" signature="337:557" placeholder="..." />
+            <marker date="1444849699765" expanded="true" signature="344:523" placeholder="..." />
+            <marker date="1444849699765" expanded="true" signature="426:482" placeholder="..." />
+            <marker date="1444849699765" expanded="true" signature="530:557" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/MenuView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <marker date="1444849725979" expanded="true" signature="148:479" placeholder="..." />
+            <marker date="1444849725979" expanded="true" signature="176:464" placeholder="..." />
+            <marker date="1444849725979" expanded="true" signature="230:454" placeholder="..." />
+            <marker date="1444849725979" expanded="true" signature="238:445" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10220674">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
