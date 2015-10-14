@@ -17,7 +17,6 @@ class MasterController
             exit();
         }
     }
-
     public function doTests()
     {
         $dataBase = new \model\DogDAL($this->mysqli);
