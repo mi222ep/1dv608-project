@@ -7,8 +7,9 @@ class LayoutView{
     public function render(MenuView $mv, GalleryView $gv){
         $this->renderHeader();
         $mv->renderMenu();
+        $gv->setLimit();
         $gv->renderGallery();
-        $this->renderFOoter();
+        $this->renderFooter();
     }
     private function renderHeader(){
         echo"<!DOCTYPE html>

@@ -27,4 +27,11 @@ class Dogs{
     public function getDogs(){
         return $this->listOfDogs;
     }
+    public function getDogsPageWise($startNumber, $numberOfDogs){
+        $limitedListOfDogs = array();
+        for($i=$startNumber; $i<$startNumber + $numberOfDogs;$i++){
+            $limitedListOfDogs[]= $this->listOfDogs[$i];
+        }
+        return $limitedListOfDogs;
+    }
 }
