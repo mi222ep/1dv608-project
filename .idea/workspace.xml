@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7447bd51-9f93-4dc3-a7a5-335abea75a28" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dog.php" afterPath="$PROJECT_DIR$/model/Dog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/DogDAL.php" afterPath="$PROJECT_DIR$/model/DogDAL.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dogs.php" afterPath="$PROJECT_DIR$/model/Dogs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aussiegalleri.iws" />
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DogDAL.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DogDAL.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/DogDAL.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68989545">
-              <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+            <state vertical-scroll-proportion="-14.903226">
+              <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
               <folding>
                 <element signature="e#435#503#0#PHP" expanded="false" />
                 <element signature="e#508#1797#0#PHP" expanded="false" />
@@ -70,22 +70,23 @@
                 <element signature="e#1942#2076#0#PHP" expanded="false" />
                 <element signature="e#2081#2217#0#PHP" expanded="false" />
                 <element signature="e#2222#3402#0#PHP" expanded="false" />
-                <marker date="1444814335795" expanded="true" signature="624:656" placeholder="select name ..dog..." />
-                <marker date="1444814335795" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
-                <marker date="1444814335795" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
-                <marker date="1444814335795" expanded="false" signature="3481:4731" placeholder="select dog.d..dog..." />
-                <marker date="1444814335795" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
-                <marker date="1444814335795" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
+                <element signature="e#3407#5161#0#PHP" expanded="false" />
+                <marker date="1444814704028" expanded="true" signature="624:656" placeholder="select name ..dog..." />
+                <marker date="1444814704028" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
+                <marker date="1444814704028" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
+                <marker date="1444814704028" expanded="true" signature="3481:4731" placeholder="select dog.d..dog..." />
+                <marker date="1444814704028" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
+                <marker date="1444814704028" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dog.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dog.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/Dog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4193548">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.8176539">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,8 +95,8 @@
       <file leaf-file-name="Dogs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Dogs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state vertical-scroll-proportion="-14.193548">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -114,9 +115,9 @@
         <option value="$PROJECT_DIR$/Model/Dog.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/controller/MasterController.php" />
-        <option value="$PROJECT_DIR$/model/Dog.php" />
         <option value="$PROJECT_DIR$/model/Dogs.php" />
         <option value="$PROJECT_DIR$/model/DogDAL.php" />
+        <option value="$PROJECT_DIR$/model/Dog.php" />
       </list>
     </option>
   </component>
@@ -272,7 +273,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444812225050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Retrieve dog from DB">
+      <created>1444814421398</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1444814421398</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -320,11 +327,12 @@
     <MESSAGE value="getting things from DB" />
     <MESSAGE value="List of Dogs class" />
     <MESSAGE value="Changing constructor in Dog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing constructor in Dog" />
+    <MESSAGE value="Retrieve dog from DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retrieve dog from DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -366,12 +374,13 @@
             <element signature="e#1942#2076#0#PHP" expanded="false" />
             <element signature="e#2081#2217#0#PHP" expanded="false" />
             <element signature="e#2222#3402#0#PHP" expanded="false" />
-            <marker date="1444814335795" expanded="true" signature="624:656" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="false" signature="3481:4731" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
+            <element signature="e#3407#5161#0#PHP" expanded="false" />
+            <marker date="1444814704028" expanded="true" signature="624:656" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4731" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
           </folding>
         </state>
       </provider>
@@ -429,12 +438,13 @@
             <element signature="e#1942#2076#0#PHP" expanded="false" />
             <element signature="e#2081#2217#0#PHP" expanded="false" />
             <element signature="e#2222#3402#0#PHP" expanded="false" />
-            <marker date="1444814335795" expanded="true" signature="624:656" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="false" signature="3481:4731" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
+            <element signature="e#3407#5161#0#PHP" expanded="false" />
+            <marker date="1444814704028" expanded="true" signature="624:656" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4731" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
           </folding>
         </state>
       </provider>
@@ -511,24 +521,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Dogs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Dog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4193548">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state vertical-scroll-proportion="-14.193548">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/DogDAL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68989545">
-          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+        <state vertical-scroll-proportion="-14.903226">
+          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding>
             <element signature="e#435#503#0#PHP" expanded="false" />
             <element signature="e#508#1797#0#PHP" expanded="false" />
@@ -536,13 +538,22 @@
             <element signature="e#1942#2076#0#PHP" expanded="false" />
             <element signature="e#2081#2217#0#PHP" expanded="false" />
             <element signature="e#2222#3402#0#PHP" expanded="false" />
-            <marker date="1444814335795" expanded="true" signature="624:656" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
-            <marker date="1444814335795" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="false" signature="3481:4731" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
-            <marker date="1444814335795" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
+            <element signature="e#3407#5161#0#PHP" expanded="false" />
+            <marker date="1444814704028" expanded="true" signature="624:656" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="624:1534" placeholder="select name ..dog..." />
+            <marker date="1444814704028" expanded="false" signature="2319:3136" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4731" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4792" placeholder="select dog.d..dog..." />
+            <marker date="1444814704028" expanded="true" signature="3481:4819" placeholder="select dog.d..dog..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Dog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8176539">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

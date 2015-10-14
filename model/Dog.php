@@ -22,5 +22,12 @@ class Dog{
     }
     public function _test(){
         echo "<br>" . $this->dogID, $this->name, $this->regnr, $this->sex, $this->color, $this->sire, $this->dam, $this->dayOfBirth;
+        echo"<br>". $this->getAge("2015-10-14");
+    }
+    public function getAge($otherDate){
+        $date1Timestamp = date_create($this->dayOfBirth);
+        $date2Timestamp = date_create($otherDate);
+        $diff = date_diff($date1Timestamp, $date2Timestamp);
+        return $diff->format('%y year, %m month, %d days');
     }
 }

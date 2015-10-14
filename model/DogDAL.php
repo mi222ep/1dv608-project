@@ -91,7 +91,7 @@ class DogDAL{
         $stmt->execute();
         $stmt->bind_result($dog, $regnr, $color, $sex, $sire, $dam, $born);
         while($stmt->fetch()){
-            return new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam,$born);
+            return new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam, $born);
         }
         return null;
     }
