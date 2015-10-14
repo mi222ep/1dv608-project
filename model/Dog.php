@@ -3,6 +3,7 @@ namespace model;
 class Dog{
     private $dogID;
     private $name;
+    private $url;
     private $regnr;
     private $sex;
     private $color;
@@ -11,9 +12,10 @@ class Dog{
     private $dayOfBirth;
     private $photos = array();
 
-    public function __construct($dogID, $name, $regnr, $sex, $color, $sire, $dam, $dayOfBirth){
+    public function __construct($dogID, $name, $url, $regnr, $sex, $color, $sire, $dam, $dayOfBirth){
         $this->dogID = $dogID;
         $this->name =$name;
+        $this->url = $url;
         $this->regnr=$regnr;
         $this->sex=$sex;
         $this->color=$color;
@@ -41,5 +43,25 @@ class Dog{
     }
     public function getID(){
         return $this->dogID;
+    }
+    public function getURL(){
+        return $this->url;
+    }
+    public function getName(){
+        return $this->name;
+    }
+    public function getLatestImage(){
+        $mostRecentPhoto = null;
+        foreach($this->photos as $photo){
+            $mostRecentPhoto = $photo->getPhotoDate();
+        }
+        return $mostRecentPhoto;
+    }
+    public function getLatestImageURL(){
+        $mostRecentPhoto = null;
+        foreach($this->photos as $photo){
+            $mostRecentPhoto = $photo->getLeftImg();
+        }
+        return $mostRecentPhoto;
     }
 }

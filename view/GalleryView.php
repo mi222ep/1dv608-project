@@ -1,5 +1,6 @@
 <?php
 namespace view;
+//Prints the gallery
 class GalleryView{
     private $listOfDogs = array();
 
@@ -11,7 +12,9 @@ class GalleryView{
 <div id='gallwrapper''></div>";
 
         foreach($this->listOfDogs as $dog){
-            echo "en hund!";
+           echo " <a href='/test/aussie.php?dog='".$dog->getURL()."><div class='gallerywrapper'>
+         <img src='images/thumbnails/".$dog->getLatestImage()."/".$dog->getLatestImageURL()."' class='galleryimg'>
+         <p>" . $dog->getName(). "</p></a></div>";
         }
     }
 }

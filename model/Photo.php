@@ -28,4 +28,7 @@ class Photo
     public function getPhotoDate(){
         return $this->eventDate;
     }
+    public function getLeftImg(){
+        return $this->leftImg;
+    }
 }

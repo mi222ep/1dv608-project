@@ -7,6 +7,7 @@ class DogDAL{
 
     //Static database column names
     private static $name = "dog.name";
+    private static $url = "dog.url";
     private static $regnr = "dog.regnr";
     private static $color = "color.colorSWE";
     private static $sex = "dog.isBitch";
@@ -74,6 +75,7 @@ class DogDAL{
     }
     public function getSingleDog($dogID){
         $stmt = $this->db->prepare("select ".self::$name.",
+                                           ".self::$url.",
                                            ".self::$regnr.",
                                            ".self::$color.",
                                            ".self::$sex.",
@@ -90,9 +92,9 @@ class DogDAL{
             throw new \Exception($this->db->error);
         }
         $stmt->execute();
-        $stmt->bind_result($dog, $regnr, $color, $sex, $sire, $dam, $born);
+        $stmt->bind_result($dog, $url, $regnr, $color, $sex, $sire, $dam, $born);
         while($stmt->fetch()){
-            $dog = new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam,$born);
+            $dog = new Dog($dogID,$dog, $url,$regnr,$sex,$color,$sire,$dam,$born);
             return $dog;
         }
         return null;
