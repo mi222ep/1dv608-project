@@ -1,10 +1,9 @@
 <?php
 namespace controller;
-use model\Dog;
-use model\DogDAL;
 
 require_once("model/Dog.php");
 require_once("model/Dogs.php");
+require_once("model/DogDAL.php");
 
 class MasterController
 {
@@ -21,7 +20,7 @@ class MasterController
 
     public function doTests()
     {
-        $dataBase = new DogDAL($this->mysqli);
+        $dataBase = new \model\DogDAL($this->mysqli);
         $testDogs = new \model\Dogs($dataBase);
         $testDogs->_test();
     }
