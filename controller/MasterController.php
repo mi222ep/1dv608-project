@@ -22,8 +22,6 @@ class MasterController
     public function doTests()
     {
         $dataBase = new DogDAL($this->mysqli);
-        //$testDog = new Dog($dataBase);
-        //$testDog->_test();
         $testDogs = new \model\Dogs($dataBase);
         $testDogs->_test();
     }
