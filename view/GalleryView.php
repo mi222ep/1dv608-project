@@ -9,8 +9,9 @@ class GalleryView{
     public function __construct(\model\Dogs $listOfDogs){
         $this->listOfDogs = $listOfDogs;
     }
-    public function setLimit(){
-        $this->limitedDogList = $this->listOfDogs->getDogsPageWise(0,$this->limitOfDogs);
+    public function setLimit(\view\NavigationView $nv){
+        $startNumber = $nv->getPage() * $this->limitOfDogs;
+        $this->limitedDogList = $this->listOfDogs->getDogsPageWise($startNumber,$this->limitOfDogs);
     }
     public function renderGallery(){
         echo"<h1>Aussiegalleriet</h1>

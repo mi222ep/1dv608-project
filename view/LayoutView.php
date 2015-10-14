@@ -7,7 +7,6 @@ class LayoutView{
     public function render(MenuView $mv, GalleryView $gv){
         $this->renderHeader();
         $mv->renderMenu();
-        $gv->setLimit();
         $gv->renderGallery();
         $this->renderFooter();
     }

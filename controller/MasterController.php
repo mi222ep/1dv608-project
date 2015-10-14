@@ -7,6 +7,7 @@ require_once("model/DogDAL.php");
 require_once("view/MenuView.php");
 require_once("view/LayoutView.php");
 require_once("view/GalleryView.php");
+require_once("view/NavigationView.php");
 
 class MasterController
 {
@@ -15,6 +16,7 @@ class MasterController
     private $mv;
     private $gv;
     private $dogs;
+    private $nv;
 
     function __construct()
     {
@@ -24,12 +26,14 @@ class MasterController
             exit();
         }
         $this->mv = new \view\MenuView();
+        $this->nv = new \view\NavigationView();
         $this->lv = new \view\LayoutView();
         $dataBase = new \model\DogDAL($this->mysqli);
         $this->dogs = new \model\Dogs($dataBase);
         $this->gv = new \view\GalleryView($this->dogs);
     }
     public function doGallery(){
+        $this->gv->setLimit($this->nv);
         $this->lv->render($this->mv, $this->gv);
     }
     public function doTests()
