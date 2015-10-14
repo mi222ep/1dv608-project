@@ -58,9 +58,9 @@ class DogDAL{
             throw new \Exception($this->db->error);
         }
         $stmt->execute();
-        $stmt->bind_result($password);
+        $stmt->bind_result($dog);
         while ($stmt->fetch()) {
-            $listOfDogs[] = $password;
+            $listOfDogs[] =$dog;
         }
         return $listOfDogs;
     }
