@@ -15,6 +15,9 @@ class Dogs{
             $newDog = $this->dogDAL->getSingleDog($id);
             $this->listOfDogs[] = $newDog;
         }
+        foreach($this->listOfDogs as $dog){
+            $this->dogDAL->addNewPhotos($dog);
+        }
     }
     public function _test(){
         foreach($this->listOfDogs as $dog){

@@ -23,4 +23,7 @@ class Photo
         $this->photographer = $photographer;
         $this->isPuppy = $isPuppy;
     }
+    public function _test(){
+        echo $this->headShot;
+    }
 }

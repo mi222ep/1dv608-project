@@ -1,6 +1,7 @@
 <?php
 namespace model;
 //Retrieves info from database, return dogs
+require_once("Photo.php");
 class DogDAL{
     private $db;
 
@@ -92,12 +93,29 @@ class DogDAL{
         $stmt->bind_result($dog, $regnr, $color, $sex, $sire, $dam, $born);
         while($stmt->fetch()){
             $dog = new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam,$born);
-            $this->addNewPhotos($dog);
+            return $dog;
         }
         return null;
     }
-    private function addNewPhotos(Dog $dog){
-        $photo = new Photo(1,2,2,2,2,2,2,2);
-        $dog->addPhoto($photo);
+    public function addNewPhotos(Dog $dog){
+        $dogID = $dog->getID();
+        $stmt = $this->db->prepare("select images.headShot from dog
+                                                            INNER JOIN images ON dog.dogID = images.dogID
+                                                            INNER JOIN color ON dog.colorID = color.colorID
+                                                            INNER JOIN event ON images.eventID = event.eventID
+                                                            INNER JOIN litter ON dog.litterID = litter.litterID
+                                                            INNER JOIN origin ON dog.originID = origin.originID
+                                                            INNER JOIN photographer ON images.photographerID = photographer.photographerID
+                                                            INNER JOIN tail ON dog.tailID = tail.tailID
+                                                            where dog.dogID ='$dogID'");
+        if ($stmt === FALSE) {
+            throw new \Exception($this->db->error);
+        }
+        $stmt->execute();
+        $stmt->bind_result($headshot);
+        while($stmt->fetch()){
+            $photo = new Photo($headshot,2,2,2,2,2,2,2);
+            $dog->addPhoto($photo);
+        }
     }
 }
