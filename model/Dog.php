@@ -9,6 +9,7 @@ class Dog{
     private $sire;
     private $dam;
     private $dayOfBirth;
+    private $photos = array();
 
     public function __construct($dogID, $name, $regnr, $sex, $color, $sire, $dam, $dayOfBirth){
         $this->dogID = $dogID;
@@ -29,5 +30,8 @@ class Dog{
         $date2Timestamp = date_create($otherDate);
         $diff = date_diff($date1Timestamp, $date2Timestamp);
         return $diff->format('%y year, %m month, %d days');
+    }
+    public function addPhoto($photo){
+        $photos[] = $photo;
     }
 }

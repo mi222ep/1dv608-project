@@ -91,8 +91,13 @@ class DogDAL{
         $stmt->execute();
         $stmt->bind_result($dog, $regnr, $color, $sex, $sire, $dam, $born);
         while($stmt->fetch()){
-            return new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam, $born);
+            $dog = new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam,$born);
+            $this->addNewPhotos($dog);
         }
         return null;
+    }
+    private function addNewPhotos(Dog $dog){
+        $photo = new Photo(1,2,2,2,2,2,2,2);
+        $dog->addPhoto($photo);
     }
 }
