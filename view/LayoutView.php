@@ -4,7 +4,13 @@ class LayoutView{
     public function __construct(){
 
     }
-    public function render(MenuView $mv){
+    public function render(MenuView $mv, GalleryView $gv){
+        $this->renderHeader();
+        $mv->renderMenu();
+        $gv->renderGallery();
+        $this->renderFOoter();
+    }
+    private function renderHeader(){
         echo"<!DOCTYPE html>
 <html>
 <head>
@@ -15,11 +21,9 @@ class LayoutView{
 	<title>Aussiegalleri.se</title>
 </head>
 <body>
-<?php
- include('menu.php');
- ?>
  <div id='contentwrapper'>";
-        $mv->renderMenu();
+    }
+    private function renderFooter(){
         echo" </div>
  </body>
  </html>";

@@ -24,4 +24,7 @@ class Dogs{
             $dog->_test();
         }
     }
+    public function getDogs(){
+        return $this->listOfDogs;
+    }
 }
