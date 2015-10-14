@@ -1,5 +1,6 @@
 <?php
 namespace model;
+//Retrieves info from database, return dogs
 class DogDAL{
     private $db;
 
@@ -7,7 +8,10 @@ class DogDAL{
     private static $name = "dog.name";
     private static $regnr = "dog.regnr";
     private static $color = "color.colorSWE";
-
+    private static $sex = "dog.isBitch";
+    private static $sire = "litter.sire";
+    private static $dam = "litter.dam";
+    private static $dateOfBirth ="litter.born";
     public function __construct(\mysqli $db){
         $this->db = $db;
 }
@@ -63,5 +67,32 @@ class DogDAL{
             $listOfDogs[] =$dog;
         }
         return $listOfDogs;
+    }
+    public function getSingleDog($dogID){
+        $stmt = $this->db->prepare("select ".self::$name.",
+                                           ".self::$regnr.",
+                                           ".self::$color.",
+                                           ".self::$sex.",
+                                           ".self::$sire.",
+                                           ".self::$dam.",
+                                           ".self::$dateOfBirth."
+                                                            from dog
+                                                            INNER JOIN images ON dog.dogID = images.dogID
+                                                            INNER JOIN color ON dog.colorID = color.colorID
+                                                            INNER JOIN event ON images.eventID = event.eventID
+                                                            INNER JOIN litter ON dog.litterID = litter.litterID
+                                                            INNER JOIN origin ON dog.originID = origin.originID
+                                                            INNER JOIN photographer ON images.photographerID = photographer.photographerID
+                                                            INNER JOIN tail ON dog.tailID = tail.tailID
+                                                            where dog.dogID ='$dogID'");
+        if ($stmt === FALSE) {
+            throw new \Exception($this->db->error);
+        }
+        $stmt->execute();
+        $stmt->bind_result($dog, $regnr, $color, $sex, $sire, $dam, $born);
+        while($stmt->fetch()){
+            return new Dog($dogID,$dog,$regnr,$sex,$color,$sire,$dam,$born);
+        }
+        return null;
     }
 }

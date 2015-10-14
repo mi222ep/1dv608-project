@@ -2,6 +2,8 @@
 namespace model;
 require_once("Dog.php");
 require_once("DogDAL.php");
+
+//Gather all dogs from the database in a list
 class Dogs{
     private $dogDAL;
     private $listOfDogs = array();
@@ -10,7 +12,7 @@ class Dogs{
         $this->dogDAL = $dogDAL;
         $listOfID = $dogDAL->getAllDogs();
         foreach($listOfID as $id){
-            $newDog = new Dog($this->dogDAL, $id);
+            $newDog = $this->dogDAL->getSingleDog($id);
             $this->listOfDogs[] = $newDog;
         }
     }
