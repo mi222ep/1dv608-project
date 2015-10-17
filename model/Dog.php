@@ -50,6 +50,9 @@ class Dog{
     public function getName(){
         return $this->name;
     }
+    public function getColor(){
+        return $this->color;
+    }
     public function getLatestImage(){
         $mostRecentPhoto = null;
         foreach($this->photos as $photo){

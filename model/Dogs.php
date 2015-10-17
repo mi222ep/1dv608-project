@@ -6,7 +6,10 @@ require_once("DogDAL.php");
 //Gather all dogs from the database in a list
 class Dogs{
     private $dogDAL;
+    //All dogs in the database
     private $listOfDogs = array();
+    //The dogs the user wants to display sorted as the user wants to sort
+    private $currentDogs = array();
 
     public function __construct(dogDAL $dogDAL){
         $this->dogDAL = $dogDAL;
@@ -18,6 +21,7 @@ class Dogs{
         foreach($this->listOfDogs as $dog){
             $this->dogDAL->addNewPhotos($dog);
         }
+        //usort($this->listOfDogs, array($this, 'sortByName'));
     }
     public function _test(){
         foreach($this->listOfDogs as $dog){
@@ -39,5 +43,15 @@ class Dogs{
             $limitedListOfDogs[]= $this->listOfDogs[$i];
         }
         return $limitedListOfDogs;
+    }
+    public function sortByName($a, $b)
+    {
+        return strcmp($a->getName(), $b->getName());
+    }
+    public function sortByColor($a, $b){
+        return strcmp($a->getColor(), $b->getColor());
+    }
+    public function sortDogs(){
+        usort($this->listOfDogs, array($this, 'sortByColor'));
     }
 }

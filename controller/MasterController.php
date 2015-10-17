@@ -33,6 +33,9 @@ class MasterController
         $this->gv = new \view\GalleryView($this->dogs);
     }
     public function doGallery(){
+        if($this->gv->userWantsToSort()){
+            $this->dogs->sortDogs();
+        }
         $this->gv->setLimit($this->nv);
         $this->lv->render($this->mv, $this->gv);
     }
