@@ -30,7 +30,7 @@ class MasterController
         $this->lv = new \view\LayoutView();
         $dataBase = new \model\DogDAL($this->mysqli);
         $this->dogs = new \model\Dogs($dataBase);
-        $this->gv = new \view\GalleryView($this->dogs);
+        $this->gv = new \view\GalleryView($this->dogs, $this->nv);
     }
     public function doGallery(){
         if($this->gv->userWantsToSort()){
