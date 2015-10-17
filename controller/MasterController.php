@@ -36,6 +36,9 @@ class MasterController
         if($this->gv->userWantsToSort()){
             $this->dogs->sortDogs();
         }
+        if($this->nv->getSortBy()){
+            $this->dogs->sortDogs();
+        }
         $this->gv->setLimit($this->nv);
         $this->lv->render($this->mv, $this->gv);
     }

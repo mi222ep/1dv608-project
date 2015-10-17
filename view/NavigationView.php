@@ -7,4 +7,10 @@ class NavigationView{
         }
         return 0;
     }
+    public function getSortBy(){
+        if(ISSET($_GET["sort"])){
+            return $_GET["sort"];
+        }
+        return null;
+    }
 }
