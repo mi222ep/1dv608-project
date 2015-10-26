@@ -13,7 +13,6 @@ class MasterController
 {
     private $mysqli;
     private $lv;
-    private $mv;
     private $gv;
     private $dogs;
     private $nv;
@@ -25,10 +24,8 @@ class MasterController
             printf("Connect failed: %s\n", mysqli_connect_error());
             exit();
         }
-        $this->mv = new \view\MenuView();
         $this->nv = new \view\NavigationView();
         $this->lv = new \view\LayoutView();
-        //$dataBase = new \model\DogDAL($this->mysqli);
         $this->dogs = new \model\Dogs($this->mysqli);
         $this->gv = new \view\GalleryView($this->dogs, $this->nv);
     }
@@ -39,8 +36,8 @@ class MasterController
         if($this->nv->getSortBy()){
             $this->dogs->sortDogs();
         }
-        $this->gv->setLimit($this->nv);
-        $this->lv->render($this->mv, $this->gv);
+        $this->gv->setLimit();
+        $this->lv->render($this->gv);
     }
     public function doTests()
     {

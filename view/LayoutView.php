@@ -4,7 +4,9 @@ class LayoutView{
     public function __construct(){
 
     }
-    public function render(MenuView $mv, GalleryView $gv){
+    public function render(GalleryView $gv){
+        $mv = new MenuView();
+
         $this->renderHeader();
         $mv->renderMenu();
         $gv->renderGallery();
