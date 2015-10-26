@@ -3,7 +3,7 @@ namespace view;
 //Prints the gallery
 class GalleryView{
     private $listOfDogs;
-    private $limitOfDogs = 12;
+    private $limitOfDogs = 16;
     private $limitedDogList = array();
     private $nv;
 
@@ -21,8 +21,12 @@ class GalleryView{
     }
     public function renderGallery(){
         if($this->nv->getSingleDog()){
-            $this->renderSingleDog($this->listOfDogs->getDogByURL($this->nv->getSingleDog()));
-
+            if($this->listOfDogs->getDogByURL($this->nv->getSingleDog())){
+                $this->renderSingleDog($this->listOfDogs->getDogByURL($this->nv->getSingleDog()));
+            }
+            else{
+                $this->renderSomethingsWrong();
+            }
         }
         else{
             if($this->listView){
@@ -39,8 +43,6 @@ class GalleryView{
                 }
             }
         }
-
-
     }
     public function renderSingleDog(\model\dog $dog){
 
@@ -108,5 +110,8 @@ class GalleryView{
      echo " <a href='?dog=".$dog->getURL()."'><div class='gallerywrapper'>
          <img src='images/thumbnails/".$dog->getImageDate()."/".$dog->getImageLeftURL()."' class='galleryimg'>
          <p>" . $dog->getName(). "</p></a></div>";
+    }
+    private function renderSomethingsWrong(){
+        echo "<h1>Någonting verkar ha blivit fel.<a href='?'>Gå tillbaka till galleriet här.</a></h1>";
     }
 }
