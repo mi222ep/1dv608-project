@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7447bd51-9f93-4dc3-a7a5-335abea75a28" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/LayoutView.php" afterPath="$PROJECT_DIR$/view/LayoutView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dog.php" afterPath="$PROJECT_DIR$/model/Dog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/GalleryView.php" afterPath="$PROJECT_DIR$/view/GalleryView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MasterController.php" afterPath="$PROJECT_DIR$/controller/MasterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/NavigationView.php" afterPath="$PROJECT_DIR$/view/NavigationView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aussiegalleri.iws" />
@@ -31,9 +33,11 @@
       <file leaf-file-name="LayoutView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/LayoutView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5161295">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state vertical-scroll-proportion="-11.354838">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
+                <element signature="e#287#583#0#PHP" expanded="false" />
+                <element signature="e#588#667#0#PHP" expanded="false" />
                 <marker date="1445865745656" expanded="true" signature="354:574" placeholder="..." />
                 <marker date="1445865745656" expanded="true" signature="361:540" placeholder="..." />
                 <marker date="1445865745656" expanded="true" signature="443:499" placeholder="..." />
@@ -43,13 +47,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GalleryView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/GalleryView.php">
+      <file leaf-file-name="Dog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/Dog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.064518">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state vertical-scroll-proportion="-6.6307693">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DogDAL.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/DogDAL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6451614">
+              <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
               <folding>
-                <marker date="1445107866163" expanded="true" signature="870:941" placeholder="..." />
+                <element signature="e#899#967#0#PHP" expanded="false" />
+                <element signature="e#972#2261#0#PHP" expanded="false" />
+                <element signature="e#2266#2401#0#PHP" expanded="false" />
+                <element signature="e#2406#2540#0#PHP" expanded="false" />
+                <element signature="e#2545#2681#0#PHP" expanded="false" />
+                <element signature="e#2686#3074#0#PHP" expanded="false" />
+                <marker date="1444836206526" expanded="true" signature="2783:2808" placeholder="select dog.d..dog..." />
               </folding>
             </state>
           </provider>
@@ -58,10 +78,10 @@
       <file leaf-file-name="MasterController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/MasterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46341464">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.6678281">
+              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding>
-                <element signature="e#1159#1326#0#PHP" expanded="false" />
+                <element signature="e#1245#1412#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,10 +90,12 @@
       <file leaf-file-name="NavigationView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/NavigationView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.903226">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state vertical-scroll-proportion="-7.096774">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="e#149#371#0#PHP" expanded="false" />
+                <element signature="e#376#509#0#PHP" expanded="false" />
+                <element signature="e#514#1140#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -82,12 +104,11 @@
       <file leaf-file-name="Dogs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Dogs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.806452">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state vertical-scroll-proportion="-11.354838">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="e#337#791#0#PHP" expanded="false" />
                 <element signature="e#485#620#0#PHP" expanded="false" />
-                <element signature="e#796#907#0#PHP" expanded="false" />
                 <element signature="e#829#901#0#PHP" expanded="false" />
                 <element signature="e#912#978#0#PHP" expanded="false" />
                 <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -122,11 +143,11 @@
         <option value="$PROJECT_DIR$/model/Photo.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/view/MenuView.php" />
+        <option value="$PROJECT_DIR$/model/Dogs.php" />
+        <option value="$PROJECT_DIR$/view/LayoutView.php" />
         <option value="$PROJECT_DIR$/model/Dog.php" />
         <option value="$PROJECT_DIR$/view/GalleryView.php" />
         <option value="$PROJECT_DIR$/view/NavigationView.php" />
-        <option value="$PROJECT_DIR$/model/Dogs.php" />
-        <option value="$PROJECT_DIR$/view/LayoutView.php" />
         <option value="$PROJECT_DIR$/controller/MasterController.php" />
       </list>
     </option>
@@ -476,7 +497,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445865101097</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Refactoring continued">
+      <created>1445865914794</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1445865914794</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -519,7 +546,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Master Controller added" />
     <MESSAGE value="Basic test of db" />
     <MESSAGE value="getting things from DB" />
     <MESSAGE value="List of Dogs class" />
@@ -544,11 +570,12 @@
     <MESSAGE value="paging generates automatically" />
     <MESSAGE value="query string with multiple values" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Refactoring continued" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring continued" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="49" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -560,7 +587,6 @@
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -576,6 +602,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
+            <element signature="e#287#583#0#PHP" expanded="false" />
+            <element signature="e#588#667#0#PHP" expanded="false" />
             <marker date="1445865745656" expanded="true" signature="354:574" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="361:540" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="443:499" placeholder="..." />
@@ -604,7 +632,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
-            <marker date="1445107866163" expanded="true" signature="870:941" placeholder="..." />
+            <element signature="e#655#1135#0#PHP" expanded="false" />
+            <element signature="e#1140#1223#0#PHP" expanded="false" />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -614,7 +645,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
-            <element signature="e#1159#1326#0#PHP" expanded="false" />
+            <element signature="e#1245#1412#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,6 +656,8 @@
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
             <element signature="e#149#371#0#PHP" expanded="false" />
+            <element signature="e#376#509#0#PHP" expanded="false" />
+            <element signature="e#514#1140#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,7 +669,6 @@
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -652,6 +684,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
+            <element signature="e#287#583#0#PHP" expanded="false" />
+            <element signature="e#588#667#0#PHP" expanded="false" />
             <marker date="1445865745656" expanded="true" signature="354:574" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="361:540" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="443:499" placeholder="..." />
@@ -680,7 +714,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
-            <marker date="1445107866163" expanded="true" signature="870:941" placeholder="..." />
+            <element signature="e#655#1135#0#PHP" expanded="false" />
+            <element signature="e#1140#1223#0#PHP" expanded="false" />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -690,7 +727,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
-            <element signature="e#1159#1326#0#PHP" expanded="false" />
+            <element signature="e#1245#1412#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,6 +738,8 @@
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
             <element signature="e#149#371#0#PHP" expanded="false" />
+            <element signature="e#376#509#0#PHP" expanded="false" />
+            <element signature="e#514#1140#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,7 +751,6 @@
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -742,7 +780,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#1159#1326#0#PHP" expanded="false" />
+            <element signature="e#1245#1412#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,6 +796,7 @@
             <element signature="e#2406#2540#0#PHP" expanded="false" />
             <element signature="e#2545#2681#0#PHP" expanded="false" />
             <element signature="e#2686#3074#0#PHP" expanded="false" />
+            <marker date="1444836206526" expanded="true" signature="2783:2808" placeholder="select dog.d..dog..." />
           </folding>
         </state>
       </provider>
@@ -776,7 +815,6 @@
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -806,7 +844,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#1159#1326#0#PHP" expanded="false" />
+            <element signature="e#1245#1412#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,6 +860,7 @@
             <element signature="e#2406#2540#0#PHP" expanded="false" />
             <element signature="e#2545#2681#0#PHP" expanded="false" />
             <element signature="e#2686#3074#0#PHP" expanded="false" />
+            <marker date="1444836206526" expanded="true" signature="2783:2808" placeholder="select dog.d..dog..." />
           </folding>
         </state>
       </provider>
@@ -840,7 +879,6 @@
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -935,28 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/DogDAL.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.580646">
-          <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-          <folding>
-            <element signature="e#899#967#0#PHP" expanded="false" />
-            <element signature="e#972#2261#0#PHP" expanded="false" />
-            <element signature="e#2266#2401#0#PHP" expanded="false" />
-            <element signature="e#2406#2540#0#PHP" expanded="false" />
-            <element signature="e#2545#2681#0#PHP" expanded="false" />
-            <element signature="e#2686#3074#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Dog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.096775">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../1DV608_createUser/view/LoginView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.806452">
@@ -985,14 +1001,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/MenuView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25551683">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/Dogs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="e#337#791#0#PHP" expanded="false" />
             <element signature="e#485#620#0#PHP" expanded="false" />
-            <element signature="e#796#907#0#PHP" expanded="false" />
             <element signature="e#829#901#0#PHP" expanded="false" />
             <element signature="e#912#978#0#PHP" expanded="false" />
             <element signature="e#983#1451#0#PHP" expanded="false" />
@@ -1003,29 +1026,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/NavigationView.php">
+    <entry file="file://$PROJECT_DIR$/model/DogDAL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.903226">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state vertical-scroll-proportion="-3.6451614">
+          <caret line="98" column="9" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
           <folding>
-            <element signature="e#149#371#0#PHP" expanded="false" />
+            <element signature="e#899#967#0#PHP" expanded="false" />
+            <element signature="e#972#2261#0#PHP" expanded="false" />
+            <element signature="e#2266#2401#0#PHP" expanded="false" />
+            <element signature="e#2406#2540#0#PHP" expanded="false" />
+            <element signature="e#2545#2681#0#PHP" expanded="false" />
+            <element signature="e#2686#3074#0#PHP" expanded="false" />
+            <marker date="1444836206526" expanded="true" signature="2783:2808" placeholder="select dog.d..dog..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/MenuView.php">
+    <entry file="file://$PROJECT_DIR$/model/Dog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25551683">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state vertical-scroll-proportion="-6.6307693">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/GalleryView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8943089">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding>
+            <element signature="e#655#1135#0#PHP" expanded="false" />
+            <element signature="e#1140#1223#0#PHP" expanded="false" />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1445868318664" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/LayoutView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5161295">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
+            <element signature="e#287#583#0#PHP" expanded="false" />
+            <element signature="e#588#667#0#PHP" expanded="false" />
             <marker date="1445865745656" expanded="true" signature="354:574" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="361:540" placeholder="..." />
             <marker date="1445865745656" expanded="true" signature="443:499" placeholder="..." />
@@ -1034,22 +1078,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/GalleryView.php">
+    <entry file="file://$PROJECT_DIR$/view/NavigationView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.064518">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding>
-            <marker date="1445107866163" expanded="true" signature="870:941" placeholder="..." />
+            <element signature="e#149#371#0#PHP" expanded="false" />
+            <element signature="e#376#509#0#PHP" expanded="false" />
+            <element signature="e#514#1140#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/MasterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46341464">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.6678281">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
-            <element signature="e#1159#1326#0#PHP" expanded="false" />
+            <element signature="e#1245#1412#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -36,6 +36,9 @@ class MasterController
         if($this->nv->getSortBy()){
             $this->dogs->sortDogs();
         }
+        if($this->nv->getSingleDog()){
+            //Render single dog page
+        }
         $this->gv->setLimit();
         $this->lv->render($this->gv);
     }

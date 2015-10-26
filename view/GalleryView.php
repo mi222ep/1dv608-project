@@ -24,13 +24,10 @@ class GalleryView{
         echo $this->generatePagingCounter();
         echo"<a href='?sort=1'>Sortera plx!</a>";
         echo"<h1>Aussiegalleriet</h1>
-<div id='gallwrapper''></div>
-<form method='post'>
-<input type='submit' name='".self::$sort."' value='Sort'/> <br></form>
-    <h2>xx/xx hundar visas sida <a href='?page=1'>-1-</a><a href='?page=2'>-2-</a></h2>
+
 ";
         foreach($this->limitedDogList as $dog){
-           echo " <a href='/test/aussie.php?dog='".$dog->getURL()."><div class='gallerywrapper'>
+           echo " <a href='?dog=".$dog->getURL()."'><div class='gallerywrapper'>
          <img src='images/thumbnails/".$dog->getLatestImage()."/".$dog->getLatestImageURL()."' class='galleryimg'>
          <p>" . $dog->getName(). "</p></a></div>";
         }
@@ -38,7 +35,7 @@ class GalleryView{
     public function userWantsToSort(){
         return isset($_POST[self::$sort]);
     }
-    public function generatePagingCounter(){
+    private function generatePagingCounter(){
         $pagingHTML = "";
         if(isset($_Get["page"])){
             unset($_GET["page"]);

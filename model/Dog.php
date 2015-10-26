@@ -24,7 +24,7 @@ class Dog{
         $this->dayOfBirth=$dayOfBirth;
     }
     public function _test(){
-        echo "<br>" . $this->dogID, $this->name, $this->regnr, $this->sex, $this->color, $this->sire, $this->dam, $this->dayOfBirth;
+        echo "<br>" . $this->dogID, $this->name, $this->url, $this->regnr, $this->sex, $this->color, $this->sire, $this->dam, $this->dayOfBirth;
         echo "<br>PHOTOS";
         foreach($this->photos as $photo){
             echo"<br>". $this->getAge($photo->getPhotoDate());

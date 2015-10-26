@@ -38,4 +38,7 @@ class NavigationView{
         $url .= "?".http_build_query($queryString);
         return $url;
     }
+    public function getSingleDog(){
+        return isset($_GET["dog"]);
+    }
 }
