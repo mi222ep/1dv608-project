@@ -5,6 +5,7 @@ class NavigationView{
     public static $sort = "navigationView::sort";
 
     public function getPage(){
+        //TODO: safety before all - make sure nothing strange is entered in query strings
         if(ISSET($_GET["page"])){
             return $_GET["page"] - 1;
         }

@@ -28,8 +28,8 @@ class MasterController
         $this->mv = new \view\MenuView();
         $this->nv = new \view\NavigationView();
         $this->lv = new \view\LayoutView();
-        $dataBase = new \model\DogDAL($this->mysqli);
-        $this->dogs = new \model\Dogs($dataBase);
+        //$dataBase = new \model\DogDAL($this->mysqli);
+        $this->dogs = new \model\Dogs($this->mysqli);
         $this->gv = new \view\GalleryView($this->dogs, $this->nv);
     }
     public function doGallery(){

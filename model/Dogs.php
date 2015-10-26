@@ -11,9 +11,9 @@ class Dogs{
     //The dogs the user wants to display sorted as the user wants to sort
     private $currentDogs = array();
 
-    public function __construct(dogDAL $dogDAL){
-        $this->dogDAL = $dogDAL;
-        $listOfID = $dogDAL->getAllDogs();
+    public function __construct(\mysqli $mysqli){
+        $this->dogDAL = new DogDAL($mysqli);
+        $listOfID = $this->dogDAL->getAllDogs();
         foreach($listOfID as $id){
             $newDog = $this->dogDAL->getSingleDog($id);
             $this->listOfDogs[] = $newDog;
