@@ -8,7 +8,6 @@ class GalleryView{
     private $nv;
 
     private $listView = false;
-    private $viewPuppies = false;
 
     private static $sort = "GalleryView::Sort";
 
@@ -21,29 +20,36 @@ class GalleryView{
         $this->limitedDogList = $this->listOfDogs->getDogsPageWise($startNumber,$this->limitOfDogs);
     }
     public function renderGallery(){
-        echo $this->generatePagingCounter();
         if($this->nv->getSingleDog()){
             $this->renderSingleDog($this->listOfDogs->getDogByURL($this->nv->getSingleDog()));
 
         }
-        if($this->listView){
-
-        }
         else{
-            echo"<a href='?sort=1'>Sortera plx!</a>";
-            echo"<h1>Aussiegalleriet</h1>
+            if($this->listView){
+
+            }
+            else{
+                echo $this->generatePagingCounter();
+                echo"<a href='?sort=1'>Sortera plx!</a>";
+                echo"<h1>Aussiegalleriet</h1>
 
 ";
-            foreach($this->limitedDogList as $dog){
-                $this->renderGridViewGallery($dog);
+                foreach($this->limitedDogList as $dog){
+                    $this->renderGridViewGallery($dog);
+                }
             }
         }
 
+
     }
     public function renderSingleDog(\model\dog $dog){
-        //$dog = $this->listOfDogs->getDogByURL();
 
-        $dogGender = "testkön";
+        if($dog->getSex()){
+            $dogGender = "Hane";
+        }
+        else{
+            $dogGender = "Tik";
+        }
         echo "
 	         	<div id='dogpresen'>
 
@@ -52,12 +58,12 @@ class GalleryView{
 
 			</div>
 			<div id='standimg'>
-						<img src='images/". $dog->getLatestImage()."/" . $dog->getLatestImageURL() . "' class='standimg'>
-						<img src='images/". $dog->getLatestImage()."/" . $dog->getLatestImageURL() . "' class='standimg'>
+						<img src='images/". $dog->getImageDate()."/" . $dog->getImageLeftURL() . "' class='standimg'>
+						<img src='images/". $dog->getImageDate()."/" . $dog->getImageRightURL() . "' class='standimg'>
 						<br>
 						</div>
 				<div id='headandfact'>
-						<img src='images/". $dog->getLatestImage()."/" . $dog->getLatestImageURL() . "' class='headimg'>
+						<img src='images/". $dog->getImageDate()."/" . $dog->getImageHeadURL() . "' class='headimg'>
 
 						<ul>
 							<li>
@@ -73,10 +79,10 @@ class GalleryView{
 							<b>Regnr: </b> ". $dog->getRegnr()."
 							</li>
 							<li>
-							<b>Fotad:</b> ". $dogGender."
+							<b>Fotad:</b> ".$dog->getImageDate()." i ". $dog->getPhotoPlace()."
 							</li>
 							<li>
-							<b>Ålder på bilden:</b> ". $dogGender."
+							<b>Ålder på bilden:</b> ". $dog->getAgeInPicture()."
 							</li>
 
 						</ul>
@@ -100,7 +106,7 @@ class GalleryView{
     }
     private function renderGridViewGallery(\model\Dog $dog){
      echo " <a href='?dog=".$dog->getURL()."'><div class='gallerywrapper'>
-         <img src='images/thumbnails/".$dog->getLatestImage()."/".$dog->getLatestImageURL()."' class='galleryimg'>
+         <img src='images/thumbnails/".$dog->getImageDate()."/".$dog->getImageLeftURL()."' class='galleryimg'>
          <p>" . $dog->getName(). "</p></a></div>";
     }
 }

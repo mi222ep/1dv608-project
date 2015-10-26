@@ -31,4 +31,13 @@ class Photo
     public function getLeftImg(){
         return $this->leftImg;
     }
+    public function getRightImg(){
+        return $this->rightImg;
+    }
+    public function getHeadImg(){
+        return $this->headShot;
+    }
+    public function getPhotoPlace(){
+        return $this->eventPlace;
+    }
 }

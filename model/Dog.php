@@ -36,7 +36,7 @@ class Dog{
         $date1Timestamp = date_create($this->dayOfBirth);
         $date2Timestamp = date_create($otherDate);
         $diff = date_diff($date1Timestamp, $date2Timestamp);
-        return $diff->format('%y year, %m month, %d days');
+        return $diff->format('%y år, %m månader, %d dagar');
     }
     public function addPhoto($photo){
         $this->photos[] = $photo;
@@ -53,17 +53,31 @@ class Dog{
     public function getColor(){
         return $this->color;
     }
-    public function getLatestImage(){
+    public function getImageDate(){
         $mostRecentPhoto = null;
         foreach($this->photos as $photo){
             $mostRecentPhoto = $photo->getPhotoDate();
         }
         return $mostRecentPhoto;
     }
-    public function getLatestImageURL(){
+    public function getImageLeftURL(){
         $mostRecentPhoto = null;
         foreach($this->photos as $photo){
             $mostRecentPhoto = $photo->getLeftImg();
+        }
+        return $mostRecentPhoto;
+    }
+    public function getImageRightURL(){
+        $mostRecentPhoto = null;
+        foreach($this->photos as $photo){
+            $mostRecentPhoto = $photo->getRightImg();
+        }
+        return $mostRecentPhoto;
+    }
+    public function getImageHeadURL(){
+        $mostRecentPhoto = null;
+        foreach($this->photos as $photo){
+            $mostRecentPhoto = $photo->getHeadImg();
         }
         return $mostRecentPhoto;
     }
@@ -78,5 +92,18 @@ class Dog{
     }
     public function getRegnr(){
         return $this->regnr;
+    }
+    public function getSex(){
+        return $this->sex;
+    }
+    public function getAgeInPicture(){
+        return $this->getAge($this->getImageDate());
+    }
+    public function getPhotoPlace(){
+        $mostRecentPhoto = null;
+        foreach($this->photos as $photo){
+            $mostRecentPhoto = $photo->getPhotoPlace();
+        }
+        return $mostRecentPhoto;
     }
 }
