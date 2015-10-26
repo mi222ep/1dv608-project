@@ -39,6 +39,9 @@ class NavigationView{
         return $url;
     }
     public function getSingleDog(){
-        return isset($_GET["dog"]);
+        if(isset($_GET["dog"])){
+            return $_GET["dog"];
+        }
+        return false;
     }
 }

@@ -37,15 +37,13 @@ class MasterController
             $this->dogs->sortDogs();
         }
         if($this->nv->getSingleDog()){
-            //Render single dog page
         }
         $this->gv->setLimit();
         $this->lv->render($this->gv);
     }
     public function doTests()
     {
-        $dataBase = new \model\DogDAL($this->mysqli);
-        $testDogs = new \model\Dogs($dataBase);
+        $testDogs = new \model\Dogs($this->mysqli);
         $testDogs->_test();
     }
 }

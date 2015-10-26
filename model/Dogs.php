@@ -54,4 +54,12 @@ class Dogs{
     public function sortDogs(){
         usort($this->listOfDogs, array($this, 'sortByColor'));
     }
+    public function getDogByURL($url){
+        foreach($this->listOfDogs as $dog){
+            if($dog->getURL() == $url){
+                return $dog;
+            }
+        }
+        return null;
+    }
 }

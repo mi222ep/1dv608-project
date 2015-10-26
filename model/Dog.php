@@ -67,4 +67,16 @@ class Dog{
         }
         return $mostRecentPhoto;
     }
+    public function getSire(){
+        return $this->sire;
+    }
+    public function getDam(){
+        return $this->dam;
+    }
+    public function getBirthday(){
+        return $this->dayOfBirth;
+    }
+    public function getRegnr(){
+        return $this->regnr;
+    }
 }
