@@ -40,6 +40,9 @@ class MasterController
         if($this->nv->getSortBy()){
             $this->dogs->sortDogsByColor();
         }
+        else{
+            $this->dogs->sortDogsByName();
+        }
         if($this->nv->getSingleDog()){
         }
         $this->gv->setLimit();
