@@ -22,6 +22,7 @@ class Photo
         $this->photographer = $photographer;
         $this->isPuppy = $isPuppy;
     }
+    //Public GET functions
     public function _test(){
         echo $this->headShot, $this->leftImg, $this->rightImg, $this->eventDate, $this->eventPlace, $this->eventDescr, $this->photographer, $this->isPuppy;
     }

@@ -10,8 +10,10 @@ class Dog{
     private $sire;
     private $dam;
     private $dayOfBirth;
+    //Prepared for future function to show multiple photos
     private $photos = array();
 
+    //Get methods to get different information from dogs
     public function __construct($dogID, $name, $url, $regnr, $sex, $color, $sire, $dam, $dayOfBirth){
         $this->dogID = $dogID;
         $this->name =$name;

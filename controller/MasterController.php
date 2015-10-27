@@ -26,7 +26,7 @@ class MasterController
         }
         $this->nv = new \view\NavigationView();
         $this->lv = new \view\LayoutView();
-        $this->dogs = new \model\Dogs($this->mysqli);
+        $this->dogs = new \model\ListOfDogs($this->mysqli);
         $this->gv = new \view\GalleryView($this->dogs, $this->nv);
     }
     public function doGallery(){
@@ -40,7 +40,7 @@ class MasterController
     }
     public function doTests()
     {
-        $testDogs = new \model\Dogs($this->mysqli);
+        $testDogs = new \model\ListOfDogs($this->mysqli);
         $testDogs->_test();
     }
 }

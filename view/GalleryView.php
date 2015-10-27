@@ -11,7 +11,7 @@ class GalleryView{
 
     private static $sort = "GalleryView::Sort";
 
-    public function __construct(\model\Dogs $listOfDogs, \view\NavigationView $nv){
+    public function __construct(\model\ListOfDogs $listOfDogs, \view\NavigationView $nv){
         $this->nv = $nv;
         $this->listOfDogs = $listOfDogs;
     }

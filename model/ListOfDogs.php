@@ -4,12 +4,10 @@ require_once("Dog.php");
 require_once("DogDAL.php");
 
 //Gather all dogs from the database in a list
-class Dogs{
+class ListOfDogs{
     private $dogDAL;
     //All dogs in the database
     private $listOfDogs = array();
-    //The dogs the user wants to display sorted as the user wants to sort
-    private $currentDogs = array();
 
     public function __construct(\mysqli $mysqli){
         $this->dogDAL = new DogDAL($mysqli);
@@ -21,7 +19,6 @@ class Dogs{
         foreach($this->listOfDogs as $dog){
             $this->dogDAL->addNewPhotos($dog);
         }
-        //usort($this->listOfDogs, array($this, 'sortByName'));
     }
     public function _test(){
         foreach($this->listOfDogs as $dog){
