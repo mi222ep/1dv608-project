@@ -46,6 +46,7 @@ class GalleryView{
         }
     }
     public function renderSingleDog(\model\dog $dog){
+        header('Content-Type: text/html; charset=utf-8');
         //Url for the back button
         $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
 
@@ -63,12 +64,12 @@ class GalleryView{
 
 			</div>
 			<div id='standimg'>
-						<img src='images/". $dog->getImageDate()."/" . $dog->getImageLeftURL() . "' class='standimg'>
-						<img src='images/". $dog->getImageDate()."/" . $dog->getImageRightURL() . "' class='standimg'>
+						<img src='/images/". $dog->getImageDate()."/" . $dog->getImageLeftURL() . "' class='standimg'>
+						<img src='/images/". $dog->getImageDate()."/" . $dog->getImageRightURL() . "' class='standimg'>
 						<br>
 						</div>
 				<div id='headandfact'>
-						<img src='images/". $dog->getImageDate()."/" . $dog->getImageHeadURL() . "' class='headimg'>
+						<img src='/images/". $dog->getImageDate()."/" . $dog->getImageHeadURL() . "' class='headimg'>
 
 						<ul>
 							<li>
@@ -112,7 +113,7 @@ class GalleryView{
     }
     private function renderGridViewGallery(\model\Dog $dog){
      echo " <a href='?".$this->nv->dog."=".$dog->getURL()."'><div class='gallerywrapper'>
-         <img src='images/thumbnails/".$dog->getImageDate()."/".$dog->getImageLeftURL()."' class='galleryimg'>
+         <img src='/images/thumbnails/".$dog->getImageDate()."/".$dog->getImageLeftURL()."' class='galleryimg'>
          <p>" . $dog->getName(). "</p></a></div>";
     }
     private function renderSomethingsWrong(){

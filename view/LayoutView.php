@@ -19,7 +19,8 @@ class LayoutView{
 	<link href='style/style.css' rel =stylesheet type='text/css'>
 	<link rel='icon'
       type='image/png'
-      href='graphic/favicon.png'>
+      href='/graphic/favicon.png'>
+      <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
 	<title>Aussiegalleri.se</title>
 </head>
 <body>

@@ -8,7 +8,7 @@ class MenuView{
         echo"<div id='menuwrapper'>
 
 <div id='contentwrapper2'>
-<img src='graphic/aussie-logo.png' id='logo'>
+<img src='/graphic/aussie-logo.png' id='logo'>
 		<nav>
 			<ul>
 				<li><a href='index.php'>Hem</a></li>
