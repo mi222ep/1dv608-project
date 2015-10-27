@@ -11,10 +11,10 @@ class MenuView{
 <img src='/graphic/aussie-logo.png' id='logo'>
 		<nav>
 			<ul>
-				<li><a href='index.php'>Hem</a></li>
-				<li><a href='gallery.php'>Galleriet</a></li>
-				<li><a href='puppygallery.php'>Valpgalleriet</a></li>
-				<li><a href='about.php'>Om galleriet</a></li>
+				<li><a href='?'>Hem</a></li>
+				<li><a href='?'>Galleriet</a></li>
+				<li><a href='?'>Valpgalleriet</a></li>
+				<li><a href='?'>Om galleriet</a></li>
 			</ul>
 		</nav>
 
