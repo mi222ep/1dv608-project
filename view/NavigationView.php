@@ -1,8 +1,9 @@
 <?php
 namespace view;
 class NavigationView{
-    public static $page = "navigationView::page";
-    public static $sort = "navigationView::sort";
+    public $page = "page";
+    public $sort = "sort";
+    public  $dog = "dog";
 
     public function getPage(){
         //TODO: safety before all - make sure nothing strange is entered in query strings
@@ -12,8 +13,8 @@ class NavigationView{
         return 0;
     }
     public function getSortBy(){
-        if(ISSET($_GET["sort"])){
-            return $_GET["sort"];
+        if(ISSET($_GET[$this->sort])){
+            return $_GET[$this->sort];
         }
         return null;
     }
@@ -21,26 +22,26 @@ class NavigationView{
         $url=strtok($_SERVER["REQUEST_URI"],'?');
         $queryString = array();
         if($page != null){
-            $queryString["page"] = $page;
+            $queryString[$this->page] = $page;
         }else{
-            if(isset($_GET['page'])){
-                $queryString["page"] = $_GET['page'];
+            if(isset($_GET[$this->page])){
+                $queryString[$this->page] = $_GET[$this->page];
             }
         }
         if($sort !=null){
-            $queryString["sort"] = $sort;
+            $queryString[$this->sort] = $sort;
         }
         else{
-            if(isset($_GET['sort'])){
-                $queryString["sort"] = $_GET['sort'];
+            if(isset($_GET[$this->sort])){
+                $queryString[$this->sort] = $_GET[$this->sort];
             }
         }
         $url .= "?".http_build_query($queryString);
         return $url;
     }
     public function getSingleDog(){
-        if(isset($_GET["dog"])){
-            return $_GET["dog"];
+        if(isset($_GET[$this->dog])){
+            return $_GET[$this->dog];
         }
         return false;
     }

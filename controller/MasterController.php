@@ -30,12 +30,6 @@ class MasterController
         $this->gv = new \view\GalleryView($this->dogs, $this->nv);
     }
     public function doGallery(){
-        if($this->gv->userWantsToSort()){
-            $this->dogs->sortDogsByColor();
-        }
-        else{
-            $this->dogs->sortDogsByName();
-        }
         if($this->nv->getSortBy()){
             $this->dogs->sortDogsByColor();
         }

@@ -34,7 +34,7 @@ class GalleryView{
             }
             else{
                 echo $this->generatePagingCounter();
-                echo"<a href='?sort=1'>Sortera efter färg -</a>";
+                echo"<a href='?".$this->nv->sort."=1'>Sortera efter färg -</a>";
                 echo"<a href='?'>Sortera efter namn</a>";
                 echo"<h1>Aussiegalleriet</h1>
 
@@ -111,7 +111,7 @@ class GalleryView{
         return $pagingHTML;
     }
     private function renderGridViewGallery(\model\Dog $dog){
-     echo " <a href='?dog=".$dog->getURL()."'><div class='gallerywrapper'>
+     echo " <a href='?".$this->nv->dog."=".$dog->getURL()."'><div class='gallerywrapper'>
          <img src='images/thumbnails/".$dog->getImageDate()."/".$dog->getImageLeftURL()."' class='galleryimg'>
          <p>" . $dog->getName(). "</p></a></div>";
     }
