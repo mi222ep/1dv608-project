@@ -20,7 +20,7 @@ class LayoutView{
 	<link rel='icon'
       type='image/png'
       href='/graphic/favicon.png'>
-      <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<meta http-equiv='content-type' content='text/html' charset='ISO-8859-1' />
 	<title>Aussiegalleri.se</title>
 </head>
 <body>

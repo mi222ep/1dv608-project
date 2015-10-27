@@ -46,7 +46,6 @@ class GalleryView{
         }
     }
     public function renderSingleDog(\model\dog $dog){
-        header('Content-Type: text/html; charset=utf-8');
         //Url for the back button
         $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
 
