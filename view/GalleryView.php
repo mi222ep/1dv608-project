@@ -34,7 +34,8 @@ class GalleryView{
             }
             else{
                 echo $this->generatePagingCounter();
-                echo"<a href='?sort=1'>Sortera plx!</a>";
+                echo"<a href='?sort=1'>Sortera efter färg -</a>";
+                echo"<a href='?'>Sortera efter namn</a>";
                 echo"<h1>Aussiegalleriet</h1>
 
 ";
@@ -45,6 +46,8 @@ class GalleryView{
         }
     }
     public function renderSingleDog(\model\dog $dog){
+        //Url for the back button
+        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
 
         if($dog->getSex()){
             $dogGender = "Hane";
@@ -89,21 +92,22 @@ class GalleryView{
 
 						</ul>
 						</div>
-				<h2><a href='?'>Tillbaka till galleriet</a></h2>
+				<h2><a href='$url'>Tillbaka till galleriet</a></h2>
 	         ";
     }
     public function userWantsToSort(){
         return isset($_POST[self::$sort]);
     }
     private function generatePagingCounter(){
-        $pagingHTML = "";
+        $pagingHTML = "Sida: ";
         if(isset($_Get["page"])){
             unset($_GET["page"]);
         }
         $numberOfPages = ceil(count($this->listOfDogs->getDogs())/$this->limitOfDogs);
         for($i=1; $i<=$numberOfPages;$i++){
-            $pagingHTML .= "<a href='". $this->nv->generateLink($i) ."'>$i</a>";
+            $pagingHTML .= "<a href='". $this->nv->generateLink($i) ."'>- $i </a>";
         }
+        $pagingHTML .="-";
         return $pagingHTML;
     }
     private function renderGridViewGallery(\model\Dog $dog){

@@ -31,10 +31,13 @@ class MasterController
     }
     public function doGallery(){
         if($this->gv->userWantsToSort()){
-            $this->dogs->sortDogs();
+            $this->dogs->sortDogsByColor();
+        }
+        else{
+            $this->dogs->sortDogsByName();
         }
         if($this->nv->getSortBy()){
-            $this->dogs->sortDogs();
+            $this->dogs->sortDogsByColor();
         }
         if($this->nv->getSingleDog()){
         }

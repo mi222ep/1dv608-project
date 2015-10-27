@@ -44,15 +44,18 @@ class Dogs{
         }
         return $limitedListOfDogs;
     }
-    public function sortByName($a, $b)
+    private function sortByName($a, $b)
     {
         return strcmp($a->getName(), $b->getName());
     }
-    public function sortByColor($a, $b){
+    private function sortByColor($a, $b){
         return strcmp($a->getColor(), $b->getColor());
     }
-    public function sortDogs(){
+    public function sortDogsByColor(){
         usort($this->listOfDogs, array($this, 'sortByColor'));
+    }
+    public function sortDogsByName(){
+        usort($this->listOfDogs, array($this, 'sortByName'));
     }
     public function getDogByURL($url){
         foreach($this->listOfDogs as $dog){
