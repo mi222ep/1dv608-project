@@ -2,7 +2,7 @@
 namespace controller;
 
 require_once("model/Dog.php");
-require_once("model/Dogs.php");
+require_once("model/ListOfDogs.php");
 require_once("model/DogDAL.php");
 require_once("view/MenuView.php");
 require_once("view/LayoutView.php");
@@ -19,7 +19,14 @@ class MasterController
 
     function __construct()
     {
-        $this->mysqli = new \mysqli("localhost", "test", "123456", "202794-aussiegalleri");
+        $servername = "aussiegalleri-202794.mysql.binero.se";
+        $username = "202794_oo25539";
+        $password = "gkRQbl09zx";
+        $dbname = "202794-aussiegalleri";
+
+        $this->mysqli = new \mysqli($servername, $username, $password, $dbname);
+        //Connection for my local enviroment
+        //$this->mysqli = new \mysqli("localhost", "test", "123456", "202794-aussiegalleri");
         if (mysqli_connect_errno()) {
             printf("Connect failed: %s\n", mysqli_connect_error());
             exit();

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7447bd51-9f93-4dc3-a7a5-335abea75a28" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\data\localweb\1dv608-project\model\Dogs.php" afterPath="$PROJECT_DIR$/model/ListOfDogs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Dog.php" afterPath="$PROJECT_DIR$/model/Dog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/GalleryView.php" afterPath="$PROJECT_DIR$/view/GalleryView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MasterController.php" afterPath="$PROJECT_DIR$/controller/MasterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/Photo.php" afterPath="$PROJECT_DIR$/model/Photo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aussiegalleri.iws" />
@@ -81,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Photo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35772356">
+            <state vertical-scroll-proportion="-9.935484">
               <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="e#233#677#0#PHP" expanded="false" />
@@ -120,6 +116,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MasterController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/MasterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28106853">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#1443#1566#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/Aussiegalleri/säkerhetskopis/2015-08-08/gallery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.2580647">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -146,10 +164,10 @@
         <option value="$PROJECT_DIR$/model/Dogs.php" />
         <option value="$PROJECT_DIR$/view/GalleryView.php" />
         <option value="$PROJECT_DIR$/view/NavigationView.php" />
-        <option value="$PROJECT_DIR$/controller/MasterController.php" />
         <option value="$PROJECT_DIR$/model/Dog.php" />
         <option value="$PROJECT_DIR$/model/ListOfDogs.php" />
         <option value="$PROJECT_DIR$/model/Photo.php" />
+        <option value="$PROJECT_DIR$/controller/MasterController.php" />
       </list>
     </option>
   </component>
@@ -540,7 +558,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445956037233</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Final fixes and commenting">
+      <created>1445956251253</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1445956251253</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,7 +607,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Photo class added" />
     <MESSAGE value="Continued work with photo class" />
     <MESSAGE value="Error fixed: dogs with multiple photos loaded multiple times" />
     <MESSAGE value="Dog Dal adding all photos" />
@@ -608,7 +631,8 @@
     <MESSAGE value="Minor error handling" />
     <MESSAGE value="Details fixed" />
     <MESSAGE value="final fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="final fixes" />
+    <MESSAGE value="Final fixes and commenting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final fixes and commenting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -697,7 +721,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
-            <element signature="e#1132#1255#0#PHP" expanded="false" />
+            <element signature="e#1443#1566#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,7 +816,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
-            <element signature="e#1132#1255#0#PHP" expanded="false" />
+            <element signature="e#1443#1566#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,7 +869,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#1132#1255#0#PHP" expanded="false" />
+            <element signature="e#1443#1566#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -913,7 +937,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding>
-            <element signature="e#1132#1255#0#PHP" expanded="false" />
+            <element signature="e#1443#1566#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1001,13 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Aussiegalleri/säkerhetskopis/2015-08-08/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.451612">
-          <caret line="32" column="24" selection-start-line="30" selection-start-column="14" selection-end-line="32" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1101,16 +1118,6 @@
             <marker date="1445956173886" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1445956173886" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1445956173886" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/MasterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76655054">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#1132#1255#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1210,7 +1217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/Photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35772356">
+        <state vertical-scroll-proportion="-9.935484">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
             <element signature="e#233#677#0#PHP" expanded="false" />
@@ -1220,6 +1227,24 @@
             <element signature="e#1046#1114#0#PHP" expanded="false" />
             <element signature="e#1119#1186#0#PHP" expanded="false" />
             <element signature="e#1191#1263#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Aussiegalleri/säkerhetskopis/2015-08-08/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2580647">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/MasterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28106853">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#1443#1566#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
